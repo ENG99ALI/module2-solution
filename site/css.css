@@ -1,0 +1,67 @@
+body {
+  margin: 0px;
+}
+h1 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 35px; /* 35px is 75% larger than 20px (dummy text) */
+}
+
+section {
+  position: relative;
+  float: left;
+  margin: 20px;
+  padding: 40px 20px 20px 20px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background-color: rgb(48, 221, 140);
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+.title1,
+.title2,
+.title3 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 130px;
+  height: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid black;
+  font-size: 25px; /* 25px is 25% larger than 20px (dummy text) */
+}
+.title1 {
+  background-color: rgb(231, 147, 147);
+}
+.title2 {
+  color: blanchedalmond;
+  background-color: rgb(27, 54, 58);
+}
+.title3 {
+  background-color: rgb(131, 125, 221);
+}
+
+/*for moblie*/
+@media (max-width: 767px) {
+  section {
+    width: calc(100% - 40px);
+  }
+}
+
+/*for tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+  section {
+    width: calc((100% - 80px) / 2);
+  }
+  section.sec {
+    width: calc(100% - 40px);
+  }
+}
+
+/*for desktop*/
+@media (min-width: 992px) {
+  section {
+    width: calc((100% - 120px) / 3);
+  }
+}
